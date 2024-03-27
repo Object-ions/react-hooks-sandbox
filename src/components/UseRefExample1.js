@@ -8,6 +8,7 @@ When you change the value of a ref, it does not trigger a component re-render. T
 
 const UseRefExample1 = () => {
   const inputRef = useRef();
+  const paraRef = useRef();
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +16,8 @@ const UseRefExample1 = () => {
     inputRef.current.value = null;
     inputRef.current.style.border = '1px dashed red';
     inputRef.current.focus();
+
+    paraRef.current.innerText = 'The form submitted successfully';
   };
 
   return (
@@ -29,6 +32,8 @@ const UseRefExample1 = () => {
       <button type="submit" className="btn btn-primary">
         Submit
       </button>
+
+      <p ref={paraRef}>Fill in the fields before submitting</p>
     </form>
   );
 };
