@@ -3,7 +3,8 @@
 // import UseRefExample3 from './components/UseRefExample3';
 // import UseMemo from './components/UseMemoExample';
 // import UseCallback from './components/UseCallbackExample';
-import CustomHooksExample1 from './components/CustomHooksExample1';
+// import CustomHooksExample1 from './components/CustomHooksExample1';
+import CustomHooksExample2 from './components/CustomHooksExample2';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <UseRefExample3 /> */}
       {/* <UseMemo /> */}
       {/* <UseCallback /> */}
-      <CustomHooksExample1 />
+      {/* <CustomHooksExample1 /> */}
+      <CustomHooksExample2 />
     </div>
   );
 }
